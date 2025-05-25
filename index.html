@@ -2,33 +2,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>YMCA Scotland Social Media Training</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YMCA Social Media Training</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>YMCA Scotland: Social Media Training</h1>
-        <p>Interactive Training Module for Staff & Volunteers</p>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome!</h2>
-            <p>This interactive training is designed to help you confidently use social media to promote your YMCA activities.</p>
-        </section>
-        <section>
-            <h2>Module 1: Why Social Media Matters</h2>
-            <button onclick="startQuiz('quiz1')">Take Quiz</button>
-            <div id="quiz1" class="quiz" style="display:none;">
-                <p><strong>Question:</strong> What is one benefit of using social media for your local YMCA?</p>
-                <button onclick="alert('Correct!')">It helps connect with the community</button>
-                <button onclick="alert('Try again')">It replaces all in-person activities</button>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>Powered by YMCA Scotland | In partnership with SCVO</p>
-    </footer>
-    <script src="script.js"></script>
+  <header class="hero">
+    <h1>YMCA Scotland</h1>
+    <p>Social Media Training Module</p>
+  </header>
+
+  <section class="intro">
+    <h2>Welcome!</h2>
+    <p>This course will empower you with the tools and confidence to create, manage, and grow your YMCA's social media presence.</p>
+  </section>
+
+  <section class="module" id="module1">
+    <h3>📢 Module 1: Why Social Media?</h3>
+    <p>Social media is a powerful tool for community building, storytelling, and advocacy.</p>
+    <div class="quiz">
+      <p><strong>Why should your YMCA use social media?</strong></p>
+      <button onclick="checkAnswer(this, true)">To reach and engage the community ✅</button>
+      <button onclick="checkAnswer(this, false)">To avoid in-person events ❌</button>
+      <button onclick="checkAnswer(this, false)">To replace websites ❌</button>
+    </div>
+  </section>
+
+  <section class="module" id="module2">
+    <h3>🎨 Module 2: Design with Impact</h3>
+    <p>Use tools like Canva to create eye-catching content. Consistency in branding (e.g., colours like <span style='color:#ff0044;'>YMCA red</span>) is key!</p>
+    <div class="quiz">
+      <p><strong>Which of the following improves social media visuals?</strong></p>
+      <button onclick="checkAnswer(this, true)">Using YMCA branding and colours ✅</button>
+      <button onclick="checkAnswer(this, false)">Random neon fonts ❌</button>
+      <button onclick="checkAnswer(this, false)">Pixelated screenshots ❌</button>
+    </div>
+  </section>
+
+  <section class="module" id="module3">
+    <h3>📅 Module 3: Plan and Schedule</h3>
+    <p>Using tools like Hootsuite or Buffer, schedule posts to maintain consistency and save time.</p>
+    <div class="quiz">
+      <p><strong>What is a benefit of scheduling posts?</strong></p>
+      <button onclick="checkAnswer(this, true)">Consistency across campaigns ✅</button>
+      <button onclick="checkAnswer(this, false)">Spamming users hourly ❌</button>
+      <button onclick="checkAnswer(this, false)">Posting only at night ❌</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© YMCA Scotland 2025 | Powered by GitHub Pages</p>
+  </footer>
 </body>
 </html>
