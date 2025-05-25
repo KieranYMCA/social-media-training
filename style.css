@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ff0044;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+.quiz {
+    margin-top: 10px;
+}
